@@ -6,14 +6,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Este proyecto hace parte del Modúlo de Angular del programa BeeSoft Labs
 
-En este proyecto se aplicaron los conceptos de guards, Interceptors, routerLink y peticiones Http.
+En este proyecto se crearon dos formularios, uno usando template-forms y otro usando Reactive-form
 
-Se simulo por medio de dos botones Autenticarse y Cerrar Sesión, el acceso a el componente con el listado de los  paises en orden Alfabético.
+Se simulo la busqueda de algún País y su Capital para practicar la funcionalidad inicial de
 
-## Vista pantalla Principal
+cada formulario .
 
-<img src="/src/assets/img/Guards. Angular.PNG" alt= "Botones"> 
+## Vista pantalla Principal Template-form
+
+<img src="/src/assets/img/Template-form.png" alt= "Template-form"> 
 
 ## Vista al acceder al componente Lista de Países
 
-<img src="/src/assets/img/AccesoComponente.PNG" alt= "Paises"> 
+<img src="/src/assets/img/Reactive-Form.png" alt= "Reactive-form"> 
