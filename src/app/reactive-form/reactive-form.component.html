@@ -1,0 +1,18 @@
+<form class="reactive-form">
+    <h1>Reactive Form - Buscar País</h1>
+    
+    <div class="template-form">
+        <label for="nombre"> Nombre del País</label>
+        <input  required type ='text' name="nombre" placeholder = "Ingrese el nombre del país" [formControl] = 'control' >
+        <p>
+            <small *ngIf="control.hasError('required') && control.dirty"> Este campo es requerido </small>
+        </p>
+        <label for="capital"> Capital  </label>
+        <input  required type ='text' name="capital" placeholder = "Ingrese el nombre de la capital" [formControl] = 'control2'>
+        <p>
+            <small *ngIf="control2.hasError('required') && control.dirty"> Este campo es requerido </small>
+        </p>
+        <button [disabled]="control.invalid" class="button" type="submit" (click)= 'getControl($event)'> Consultar </button>
+    </div>
+</form>
+

@@ -1,0 +1,12 @@
+
+<form>
+    <h1>Template-Form - Buscar País</h1>
+    <div class="template-form">
+        <label for="nombre" > Nombre del País</label>
+        <input type ='text' [(ngModel)]= "form.nombre" name = "nombre"  placeholder = "Ingrese el nombre del país" required>
+        <label for="capital"> Capital  </label>
+        <input type ='text' placeholder = "Ingrese el nombre de la capital" [(ngModel)]= "form.capital" name = "capital" required>
+        <button type="submit" (click)= 'miFuncion()'> Consultar </button>
+    </div>
+</form>
+
