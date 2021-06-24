@@ -1,21 +1,23 @@
-# Task 7 semana 15 Guards en Angular / CanActive
+# Task 2 semana 16 Enviar un formulario-Submit/ Angular
 
-visitar link del proyecto https://task7semana15-guards-angular.vercel.app/
+visitar link del proyecto 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
 
 Este proyecto hace parte del Modúlo de Angular del programa BeeSoft Labs
 
-En este proyecto se crearon dos formularios, uno usando template-forms y otro usando Reactive-form
+En este proyecto se hizo la simulación de consultar un País y su capital por medio del template-forms
 
-Se simulo la busqueda de algún País y su Capital para practicar la funcionalidad inicial de
+Al momento de ingresar los datos y darle click al botón de consultar, la información se agrega a un 
 
-cada formulario .
+array inicial el cual ya contiene unos datos de muestra para verificar como esta información es anexada a la cola 
 
-## Vista pantalla Principal Template-form
+del array y como los campos de los inputs se actualizan, con el fin de simular el envio de datos de un formulario.
 
-<img src="/src/assets/img/Template-form.png" alt= "Template-form"> 
+## Vista pantalla Principal Template-form Consultar País y su capital
 
-## Vista al acceder al componente Lista de Países
+<img src="/src/assets/img/Buscar.png" alt= "template-form-País-Capital"> 
 
-<img src="/src/assets/img/Reactive-Form.png" alt= "Reactive-form"> 
+## Vista Resultado de la Búsqueda
+
+<img src="/src/assets/img/Resultado.png" alt= "Template-form-Resultado-País-Capital"> 

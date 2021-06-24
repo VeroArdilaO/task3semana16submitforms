@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
-import { CityI } from './city/city.interface';
 import { Observable } from 'rxjs';
+import { CountryI } from './city/country.interface';
  
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class CountryServiceService {
 
   constructor(private http : HttpClient) { }
 
-    getAllCities(): Observable<CityI[]> {
-      return this.http.get<CityI[]>(this.urlAPI);
+    getAllCountries(): Observable<CountryI[]> {
+      return this.http.get<CountryI[]>(this.urlAPI);
     }  
 }

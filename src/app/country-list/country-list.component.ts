@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { CityI } from '../city/city.interface';
+import { Component, OnInit, Output } from '@angular/core';
+import { CountryI } from '../city/country.interface';
 import { CountryServiceService } from '../country-service.service';
 
 @Component({
@@ -9,11 +9,14 @@ import { CountryServiceService } from '../country-service.service';
 })
 export class CountryListComponent implements OnInit {
 
-  cities: CityI[] = [];
+ @Output() countries: CountryI[] = [];
 
   constructor(private countryservice: CountryServiceService) { }
 
   ngOnInit(): void {
-    this.countryservice.getAllCities().subscribe(data => this.cities = data)
+   /*  this.countryservice.getAllCountries().subscribe(data => this.countries = data) */
+    this.countryservice.getAllCountries().subscribe(data => this.countries = data.slice(0,10))
   }
+
+ 
 }

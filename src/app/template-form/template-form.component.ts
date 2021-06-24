@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  } from '@angular/core';
+import { CountryI } from '../city/country.interface';
+import { CountryServiceService } from '../country-service.service';
+
+
 
 @Component({
   selector: 'app-template-form',
@@ -6,17 +10,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./template-form.component.css']
 })
 export class TemplateFormComponent implements OnInit {
-  form = {
-    nombre:" ",
+
+   countries: CountryI[] = [];
+
+ /*  @Output() change: EventEmitter<any> = new EventEmitter<any>(); */
+
+   form = {
+    name:" ",
     capital: " "
   };
-  constructor() { }
+  constructor(private countryservice: CountryServiceService) { }
 
   ngOnInit(): void {
+    this.countryservice.getAllCountries().subscribe(data => this.countries = data.slice(0,5))
   }
 
-  miFuncion() {
-
-    console.log(`Nombre del país ${this.form.nombre} capital ${this.form.capital}`)
-  }
+  miFuncion(): void {
+  
+      console.log(`Nombre del país ${this.form.name} capital ${this.form.capital}`)
+      const newName =  this.form.name 
+      const newCapital = ' Capital ' + this.form.capital 
+      this.form.capital = this.form.capital
+      this.countries.push({name: newName, capital:newCapital})
+      this.form.name = " ",
+      this.form.capital = " "
+  } 
 }
