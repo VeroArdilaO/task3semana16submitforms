@@ -1,8 +1,5 @@
-<<<<<<< HEAD
+
 # Task 3 y task 5 semana 16 Enviar un formulario-Submit/ Angular
-=======
-# Task 3 semana 16 Enviar un formulario-Submit/ Angular
->>>>>>> b114a5aeb6b14657a61a01d8f8e3e9d8fde97230
 
 visitar link del proyecto https://task3semana16submitforms.vercel.app/
 
