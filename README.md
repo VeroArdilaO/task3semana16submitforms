@@ -1,5 +1,5 @@
 
-# Task 3 y task 5 semana 16 Enviar un formulario-Submit/ Angular
+# Task 3 y task 5 semana 16 Enviar un formulario-Submit/ Angular Template-driven-form y Reactive-form
 
 visitar link del proyecto https://task3semana16submitforms.vercel.app/
 
@@ -7,7 +7,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Este proyecto hace parte del Modúlo de Angular del programa BeeSoft Labs
 
-En este proyecto se hizo la simulación de consultar un País y su capital por medio del template-forms
+En este proyecto se hizo la simulación de consultar un País y su capital por medio del template-forms y en Reactive-form
+
 
 Al momento de ingresar los datos y darle click al botón de consultar, la información se agrega a un 
 
