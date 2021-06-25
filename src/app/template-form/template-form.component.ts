@@ -16,13 +16,15 @@ export class TemplateFormComponent implements OnInit {
  /*  @Output() change: EventEmitter<any> = new EventEmitter<any>(); */
 
    form = {
-    name:" ",
-    capital: " "
+    name:"Nombre del País a editar",
+    capital: "Nombre de la capital a editar"
   };
   constructor(private countryservice: CountryServiceService) { }
 
   ngOnInit(): void {
     this.countryservice.getAllCountries().subscribe(data => this.countries = data.slice(0,5))
+    this.form.name = "", this.form.capital = ""
+  
   }
 
   miFuncion(): void {

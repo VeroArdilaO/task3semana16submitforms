@@ -29,6 +29,7 @@ h1 {
     align-items: center;
     width: 500px;
     margin: 0;
+    gap:20px;
 }
 
 .template-form label {
@@ -89,4 +90,9 @@ ul {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-weight: bold;
     line-height: 50px;
+}
+
+.validar {
+    font-size: 20px;
+    font-weight: 900;
 }

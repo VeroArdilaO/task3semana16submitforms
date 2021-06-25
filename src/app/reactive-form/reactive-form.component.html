@@ -3,14 +3,27 @@
     
     <div class="template-form">
         <label for="nombre"> Nombre del País</label>
-        <input  required type ='text' name="nombre" placeholder = "Ingrese el nombre del país" [formControl] = 'control' >
+        <input 
+        class="form-control" 
+        required 
+        type ='text'
+        name="nombre" 
+        placeholder = "Ingrese el nombre del país"
+        [ngClass]="{'is-invalid': control.invalid, 'is-valid': !control.invalid}" 
+        [formControl] = 'control' >
         <p>
-            <small *ngIf="control.hasError('required') && control.dirty"> Este campo es requerido </small>
+            <small class="validar"  *ngIf="control.hasError('required') && control.dirty"> Este campo es requerido </small>
         </p>
         <label for="capital"> Capital  </label>
-        <input  required type ='text' name="capital" placeholder = "Ingrese el nombre de la capital" [formControl] = 'control2'>
+        <input 
+        class="form-control" 
+        required type ='text' 
+        name="capital" 
+        placeholder = "Ingrese el nombre de la capital" 
+        [ngClass]="{'is-invalid': control2.invalid, 'is-valid': !control2.invalid}"  
+        [formControl] = 'control2'>
         <p>
-            <small *ngIf="control2.hasError('required') && control.dirty"> Este campo es requerido </small>
+            <small  class="validar" *ngIf="control2.hasError('required') && control.dirty"> Este campo es requerido </small>
         </p>
         <button [disabled]="control.invalid" class="button" type="submit" (click)= 'getControl($event)'> Consultar </button>
     </div>

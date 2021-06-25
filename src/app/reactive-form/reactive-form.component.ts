@@ -11,6 +11,8 @@ import { debounceTime } from 'rxjs/operators';
 })
 export class ReactiveFormComponent implements OnInit {
 
+  
+
   control = new FormControl('', [Validators.required]);
   control2 = new FormControl('', [Validators.required]);
 
@@ -31,6 +33,8 @@ export class ReactiveFormComponent implements OnInit {
   getControl(event: Event){
     event.preventDefault();
     console.log(`Nombre del País ${this.control.value}, Capital  ${this.control2.value}`)
+    this.control = new FormControl(" ")
+    this.control2 = new FormControl(" ")
   }
 
 }
